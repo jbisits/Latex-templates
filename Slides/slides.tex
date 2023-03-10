@@ -1,0 +1,65 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme[
+	% background=images/background.jpg, % you can add your own background image
+	logo=images/unsw-portrait.png,
+	sidelogo=images/unsw-landscape.png,
+]{unsw}
+% \usetheme{Szeged}
+% \usecolortheme{beaver}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{verbatim}
+\usepackage{graphicx,caption}
+\usepackage{pdfpages}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+\renewcommand{\theenumi}{\roman{enumi}}
+%Use for referencing \usepackage{biblatex} 
+%use this if you want to double space the document.\linespread{1.6}
+
+\title{Slide template}
+
+\subtitle{Not too hard}
+
+\author[Bisits, Josef]{Josef Bisits}
+
+% % For UNSW theme, see https://github.com/lsy3/beamer-unsw-theme for more info and usage of this template.
+\institute[School of Mathematics and Statistics, UNSW]{School of Mathematics and Statistics}
+
+%For my beamer, includes unsw logo
+% \institute[School of Mathematics and Statistics, UNSW]{
+%     School of mathematics and statistics \\
+%     University of New South Wales \\ [\medskipamount]
+%     \includegraphics[scale = 0.3]{images/unsw-portrait.png}
+% }
+% \date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Slide one}
+    This is the first slide
+\end{frame}
+
+{
+\begin{frame}
+\frametitle{Circle}
+    \begin{equation}
+        x^2 + y^2 = 1
+    \end{equation}
+    \pause
+    is equation of a circle centre $(0,0)$ radius one.
+\end{frame}
+}
+
+\end{document}
