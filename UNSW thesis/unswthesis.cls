@@ -415,26 +415,33 @@
 % Add re-definition for Honours reports rather than Higher Degree
 % theses.
 %-----------------------------------------------------------------------
-\newcommand{\titlep}{%
-        \pagestyle{empty}%
-        \null\vskip2.5cm%
+\newcommand{\titlep}{
+        \pagestyle{empty}
         \begin{center}
-                {\rmfamily\Large\uppercase\expandafter{\@title}}
+                {\rmfamily\Large\uppercase\expandafter{\textbf{\@title}}}
         \end{center}
         \vfill
         \begin{center}
-                \textsc{A thesis submitted for the degree of \\
+                {\rmfamily\Large\@author}\\
+        \end{center}
+        \vfill
+        \begin{center}
+                \textsc{A thesis in fulfillment of the requirements for the degree of \\
                 \expandafter{\@thesistype}}
         \end{center}
         \vfill
-        \begin{center}
-                {\rmfamily\normalsize By\\
-                \@author}\\
-        \end{center}
+        \begin{figure}[h]
+            \begin{center}
+            \includegraphics[width=5cm]{unsw-crest.eps}
+            \end{center} 
+        \end{figure}
         \vfill
         \begin{center}  % Department changed to School July 1995
-                {\rmfamily\normalsize School of \expandafter{\@dept},\\
-                UNSW Sydney.}
+                {\rmfamily\normalsize School of \expandafter{\@dept}\\
+                \vskip0.5cm
+                Faculty of Science\\
+                \vskip0.5cm
+                The University of New South Wales}
                 \vskip1cm
                 {\rmfamily\normalsize \@submitdate}\\
         \end{center}
